@@ -3,7 +3,7 @@
         var wahaha = res.data.link.replace("http", "https");
         document.querySelector('.status').classList.add('bg-success');
         document.querySelector('.status').innerHTML = 
-        'Image : ' + '<br><input style="width:50%" value=' + wahaha + '/>' + '<img class="img" src=' + wahaha + '/>';
+        'Image : ' + '<br><input class="image-url" value=' + wahaha + '/>' + '<img class="img" src=' + wahaha + '/>';
      }
  };
  new Imgur({ clientid: 'cc86a8de0e7c459', callback: feedback });
