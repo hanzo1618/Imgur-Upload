@@ -21,15 +21,19 @@ body.loading .loading-modal {
     max-width: 50%;
 }
 
+.info {
+    margin-top: 11%;
+}
+
 .dropzone p {
-    height: 100%;
-    line-height: 200px;
-    margin: 0;
+    /*height: 100%;*/
+    /*line-height: 200px;*/
+    margin: 0%;
     text-align: center;
     width: 100%
 }
 
-.dropzone input[type=file] {
+.input {
     height: 100%;
     left: 0;
     outline: 0;

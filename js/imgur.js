@@ -27,6 +27,7 @@
         this.endpoint = 'https://api.imgur.com/3/image';
         this.callback = options.callback || undefined;
         this.dropzone = document.querySelectorAll('.dropzone');
+        this.info = document.querySelectorAll('.info');
 
         this.run();
     };
@@ -71,13 +72,17 @@
             xhttp = null;
         },
         createDragZone: function () {
-            var p, input;
+            var p1, p2, input;
 
-                p = this.createEls('p', {}, '將圖片拖曳到這裡上傳');
-            input = this.createEls('input', {type: 'file', accept: 'image/*', multiple: 'multiple'});
+                p1 = this.createEls('p', {}, '將圖片拖曳到這裡上傳');
+                p2 = this.createEls('p', {}, '或點擊此處選擇檔案');
+            input = this.createEls('input', {type: 'file', className: 'input', accept: 'image/*'});
 
+            Array.prototype.forEach.call(this.info, function (zone) {
+                zone.appendChild(p1);
+                zone.appendChild(p2);
+            }.bind(this));
             Array.prototype.forEach.call(this.dropzone, function (zone) {
-                zone.appendChild(p);
                 zone.appendChild(input);
                 this.status(zone);
                 this.upload(zone);
