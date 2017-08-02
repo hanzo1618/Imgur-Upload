@@ -6,4 +6,4 @@
         'Image : ' + '<br><input class="image-url" value=' + wahaha + '/>' + '<img class="img" src=' + wahaha + '/>';
      }
  };
- new Imgur({ clientid: 'cc86a8de0e7c459', callback: feedback });
+ new Imgur({ clientid: '4409588f10776f7', callback: feedback });
