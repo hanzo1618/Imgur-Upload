@@ -4,3 +4,9 @@
 
 # Imgur-Upload
 Just use javascript, no need jQuery, php.
+
+## Demo
+[Demo](https://nehscsa.github.io/Imgur-Upload/)
+
+## Download
+[Link](https://github.com/NEHSCSA/Imgur-Upload/releases/)
